@@ -108,7 +108,7 @@ const spinWheel = (drumItems) => {
             rotationCount = 0;
             rotations = 101;
         }
-    }, 5);
+    }, 15);
 }
 
 fetch('/api/drumItems')

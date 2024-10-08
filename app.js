@@ -57,7 +57,7 @@ const drumItems = [
 app.set('view engine', 'html');
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', express.static('./public'));
+app.use('/', express.static('./'));
 app.get('/api/drumItems', (req, res) => {
     res.json(drumItems);
 })
