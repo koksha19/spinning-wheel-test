@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding: 1rem;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    background: linear-gradient(to bottom right, #391a5d, #bb81d9);
+    align-content: center;
+    display: grid;
+    justify-content: center;
+}
+
+header {
+    padding: 1rem;
+    font-weight: 1000;
+    font-style: italic;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.wheel {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.wheel-frame {
+    position: absolute;
+    width: 475px;
+    height: 475px;
+    border: 2rem solid #f6b514;
+    border-radius: 50%;
+    box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.wheel-center {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(to bottom, #f5c437, #e5861b);
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+img {
+     position: absolute;
+     top: 44.5%;
+     right: -4%;
+}
+
+@media screen and (max-width: 1024px) {
+    .wheel {
+        width: 450px;
+        height: 450px;
+        padding: 1.5rem;
+    }
+    .wheel-frame {
+        width: 420px;
+        height: 420px;
+    }
+    img {
+        top: 44%;
+        right: -4.5%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .wheel {
+        width: 400px;
+        height: 400px;
+        padding: 1.2rem;
+    }
+    .wheel-frame {
+        width: 380px;
+        height: 380px;
+    }
+    img {
+        top: 43%;
+        right: -5%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .wheel {
+        width: 350px;
+        height: 350px;
+        padding: 1rem;
+    }
+    .wheel-frame {
+        width: 310px;
+        height: 310px;
+    }
+    img {
+        top: 42%;
+        right: -6%;
+    }
+}
+
+
+.btn {
+    margin: 3rem;
+    font: inherit;
+    width: 10rem;
+    height: 3rem;
+    border: 2px solid #965be0;
+    background: linear-gradient(to bottom, #eeb70a, #ea7f16);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    color: #ffffff;
+    justify-self: center;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #ea7f16, #eeb70a);
+    color: #ff3c3c;
+}
